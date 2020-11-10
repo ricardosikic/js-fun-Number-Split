@@ -20,16 +20,15 @@ const numberSplit = (int) => {
     let secondNumber = firstNumber;
     let evenArray = [firstNumber, secondNumber];
 
-    // validates    
-    (firstNumber + secondNumber === int) ? evenArray : '';
+    return evenArray;
 
   } else if(int % 2 === 1) {
     let evenNum = int + 1;
     let firstNumber = (evenNum / 2) - 1;
     let secondNumber = evenNum / 2;
     let oddArray = [firstNumber, secondNumber];
-    // validates
-    (firstNumber + secondNumber === int) ? oddArray : '';
+    
+    return oddArray;
     
   }
 }
